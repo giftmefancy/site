@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout | Gift Me Fancy</title><link rel="stylesheet" href="assets/css/style.css"></head>
+<body><div id="site-header"></div>
+<main>
+<section class="page-hero compact"><div class="container"><span class="eyebrow">YOUR ORDER</span><h1>Almost <span>fancy.</span></h1><p>Confirm your details and we'll prepare a WhatsApp order for you.</p></div></section>
+<section class="section checkout-section"><div class="container checkout-layout">
+ <div><div class="checkout-box"><div class="box-heading"><h2>Your cart</h2><button id="clear-cart" class="link-button">Clear</button></div><div id="checkout-cart"></div><div class="cart-total"><span>Total</span><strong id="checkout-total">R0.00</strong></div></div>
+ <div class="checkout-box order-image-box"><div class="box-heading"><h2>Order preview</h2></div><canvas id="order-canvas" width="1000" height="700"></canvas><p class="muted">The preview is generated locally in your browser. WhatsApp can prefill text, but browser-only WhatsApp links cannot attach an image automatically.</p></div></div>
+ <form id="checkout-form" class="glass-form checkout-form">
+  <span class="eyebrow">DELIVERY & CONTACT</span><h2>Your details</h2>
+  <label>Full name<input name="name" autocomplete="name" required></label>
+  <label>Email address<input type="email" name="email" autocomplete="email" required></label>
+  <label>WhatsApp / Phone<input name="phone" autocomplete="tel" required></label>
+  <label>Delivery address<textarea name="address" rows="4" autocomplete="street-address" required></textarea></label>
+  <label>Order notes<textarea name="notes" rows="4" placeholder="Gift message, preferred arrangement, questions, etc."></textarea></label>
+  <button class="btn btn-dark" type="submit">Submit order via WhatsApp ↗</button>
+  <p class="form-note">Your order is sent to Gift Me Fancy on WhatsApp. No payment is processed by this static website.</p>
+ </form>
+</div></section>
+</main><div id="site-footer"></div>
+<script src="assets/js/app.js"></script><script src="assets/js/checkout.js"></script>
+</body></html>

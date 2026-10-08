@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Product | Gift Me Fancy</title><link rel="stylesheet" href="assets/css/style.css"></head>
+<body><div id="site-header"></div>
+<main id="product-page"></main><div id="site-footer"></div>
+<script src="assets/js/app.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', async()=>{
+ const data=await GFM.loadData(); GFM.renderHeader(); GFM.renderFooter();
+ const id=new URLSearchParams(location.search).get('id'); const p=data.products.find(x=>x.id===id);
+ if(!p){document.getElementById('product-page').innerHTML='<section class="section"><div class="container"><h1>Product not found.</h1><a class="btn btn-dark" href="shop.html">Back to shop</a></div></section>';return;}
+ document.title=p.name+' | Gift Me Fancy';
+ document.getElementById('product-page').innerHTML=GFM.productDetail(p);
+let qty=1;
+const qtyValue=document.getElementById('product-qty-value');
+document.getElementById('qty-minus').onclick=()=>{qty=Math.max(1,qty-1);qtyValue.textContent=qty;};
+document.getElementById('qty-plus').onclick=()=>{qty+=1;qtyValue.textContent=qty;};
+document.getElementById('add-detail').onclick=()=>GFM.addToCart(p,qty);
+});
+</script></body></html>

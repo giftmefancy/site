@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gift Me Fancy | Christian Aesthetics & Whimsical Wonders</title>
+<meta name="description" content="Gift Me Fancy — Christian aesthetics, whimsical gifts, garden and home treasures.">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div id="site-header"></div>
+<main>
+<section id="hero" class="hero">
+  <div class="hero-orb orb-a"></div><div class="hero-orb orb-b"></div>
+  <div class="hero-content container">
+    <div class="hero-copy">
+      <span class="eyebrow">CHRISTIAN AESTHETICS • GARDEN • HOME</span>
+      <h1>Where <span>whimsy</span><br>meets faith.</h1>
+      <p>Thoughtfully curated gifts, keepsakes and little wonders designed to bring beauty, joy and meaning into everyday spaces.</p>
+      <div class="hero-actions">
+        <a class="btn btn-dark" href="shop.html">Explore the collection <span>↗</span></a>
+        <a class="text-link" href="#about">Discover our story ↓</a>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="art-ring"></div>
+      <div class="product-orbit orbit-one"></div>
+      <div class="hero-card hero-card-top"><span>✦</span><strong>Faith-filled</strong><small>gifts with a story</small></div>
+      <div class="hero-product">
+        <div class="product-placeholder">✿</div>
+        <span class="curved-copy">MADE WITH JOY • GIFT ME FANCY • </span>
+      </div>
+      <div class="hero-card hero-card-bottom"><span>♡</span><strong>So Fancy</strong><small>for home, garden & heart</small></div>
+    </div>
+  </div>
+  <div class="hero-wave"></div>
+</section>
+
+<section id="about" class="section about-section">
+  <div class="container split">
+    <div><span class="eyebrow">OUR STORY</span><h2>Little things can carry <span>big meaning.</span></h2></div>
+    <div><p>At Gift Me Fancy, we bring joy, beauty and faith into your home with uniquely whimsical items. Every piece is chosen to feel special — whether it becomes a keepsake, a thoughtful gift, or a tiny piece of magic in your garden.</p><a class="text-link" href="contact.html">Talk to us →</a></div>
+  </div>
+</section>
+
+<section id="products" class="section products-section">
+  <div class="container">
+    <div class="section-heading"><div><span class="eyebrow">CURATED COLLECTIONS</span><h2>Find your kind of <span>fancy.</span></h2></div><a class="btn btn-outline" href="shop.html">View all products →</a></div>
+    <div id="home-category-grid" class="category-grid"></div>
+    <div id="featured-products" class="product-grid"></div>
+  </div>
+</section>
+
+<section id="services" class="section services-section">
+  <div class="container">
+    <span class="eyebrow">SPECIAL OFFERINGS</span><h2>Made personal. Made <span>meaningful.</span></h2>
+    <div class="service-grid">
+      <article><span>01</span><h3>Gift Curation</h3><p>Let us help you build a thoughtful gift around a person, moment or message.</p></article>
+      <article><span>02</span><h3>Faith-filled Gifting</h3><p>Beautiful pieces selected with Christian meaning and encouragement in mind.</p></article>
+      <article><span>03</span><h3>Bespoke Arrangements</h3><p>Custom home, garden and gifting arrangements for memorable occasions.</p></article>
+    </div>
+  </div>
+</section>
+</main>
+<div id="site-footer"></div>
+<script src="assets/js/app.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', async () => {
+  const data = await GFM.loadData();
+  GFM.renderHeader();
+  GFM.renderFooter();
+  GFM.renderCategories(data);
+  GFM.renderFeatured(data);
+});
+</script>
+</body>
+</html>
