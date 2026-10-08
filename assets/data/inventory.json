@@ -1,0 +1,153 @@
+{
+  "settings": {
+    "currency": "ZAR",
+    "currency_symbol": "R",
+    "whatsapp_number": "27837609276",
+    "company_name": "Gift Me Fancy",
+    "location": "Durban, South Africa"
+  },
+  "categories": [
+    {
+      "id": "keepsakes",
+      "name": "Keepsakes",
+      "description": "Meaningful pieces to treasure."
+    },
+    {
+      "id": "sprouts",
+      "name": "Sprouts",
+      "description": "Garden-inspired little wonders."
+    },
+    {
+      "id": "nooks",
+      "name": "Nooks",
+      "description": "Decor for cosy corners."
+    },
+    {
+      "id": "trinkets",
+      "name": "Trinkets",
+      "description": "Small gifts with big charm."
+    },
+    {
+      "id": "wander",
+      "name": "Wander",
+      "description": "Whimsical finds for journeys."
+    },
+    {
+      "id": "gather",
+      "name": "Gather",
+      "description": "Pieces made for togetherness."
+    },
+    {
+      "id": "glow",
+      "name": "Glow",
+      "description": "Light, warmth and atmosphere."
+    },
+    {
+      "id": "notes",
+      "name": "Notes",
+      "description": "Words, cards and encouragement."
+    },
+    {
+      "id": "perks",
+      "name": "Perks",
+      "description": "Special extras and gift add-ons."
+    },
+    {
+      "id": "nest",
+      "name": "Nest",
+      "description": "Home comforts with character."
+    }
+  ],
+  "products": [
+    {
+      "id": "faithful-heart",
+      "name": "Faithful Heart Keepsake",
+      "category": "keepsakes",
+      "price": 185,
+      "short_description": "A small reminder of faith, hope and love.",
+      "description": "A whimsical keepsake designed to make a meaningful Christian gift for a friend, family member or loved one.",
+      "image": "assets/images/products/faithful-heart.svg",
+      "featured": true,
+      "tags": [
+        "faith",
+        "gift",
+        "keepsake"
+      ]
+    },
+    {
+      "id": "garden-sparrow",
+      "name": "Garden Sparrow Charm",
+      "category": "sprouts",
+      "price": 145,
+      "short_description": "A cheerful little accent for your garden.",
+      "description": "A playful garden-inspired charm celebrating the simple beauty of creation.",
+      "image": "assets/images/products/garden-sparrow.svg",
+      "featured": true,
+      "tags": [
+        "garden",
+        "sparrow",
+        "decor"
+      ]
+    },
+    {
+      "id": "fancy-candle",
+      "name": "Whimsical Glow Candle",
+      "category": "glow",
+      "price": 220,
+      "short_description": "Soft atmosphere for a quiet corner.",
+      "description": "A decorative candle concept for warm evenings, prayer corners and cosy spaces.",
+      "image": "assets/images/products/fancy-candle.svg",
+      "featured": true,
+      "tags": [
+        "home",
+        "glow",
+        "gift"
+      ]
+    },
+    {
+      "id": "encouragement-card",
+      "name": "Little Light Encouragement Card",
+      "category": "notes",
+      "price": 55,
+      "short_description": "A thoughtful note for someone who needs encouragement.",
+      "description": "A beautiful little message card suitable for gifting alongside any Gift Me Fancy order.",
+      "image": "assets/images/products/encouragement-card.svg",
+      "featured": true,
+      "tags": [
+        "faith",
+        "notes",
+        "encouragement"
+      ]
+    },
+    {
+      "id": "home-nook-vase",
+      "name": "Nook Garden Vase",
+      "category": "nooks",
+      "price": 295,
+      "short_description": "A charming statement piece for a favourite nook.",
+      "description": "A decorative vase concept that brings a soft, storybook feel to shelves and tables.",
+      "image": "assets/images/products/home-nook-vase.svg",
+      "featured": false,
+      "tags": [
+        "home",
+        "vase",
+        "decor"
+      ]
+    },
+    {
+      "id": "wander-charm",
+      "name": "Wander Keepsake Charm",
+      "category": "wander",
+      "price": 125,
+      "short_description": "A tiny token for the next adventure.",
+      "description": "A whimsical travel-inspired keepsake for someone always planning the next journey.",
+      "image": "assets/images/products/wander-charm.svg",
+      "featured": false,
+      "tags": [
+        "travel",
+        "gift",
+        "charm"
+      ]
+    }
+  ]
+}
